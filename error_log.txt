@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:/WorkSpace/Python/WebDataMining_Zhihu/main.py", line 269, in <module>
+    user_cls = ZhUser(visiting_user)
+  File "D:/WorkSpace/Python/WebDataMining_Zhihu/main.py", line 125, in __init__
+    driver.find_element_by_xpath("//*[@class='Button ProfileHeader-expandButton Button--plain']").click()
+  File "D:\Programs\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\Programs\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "D:\Programs\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\Programs\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class="Button ProfileHeader-expandButton Button--plain" type="button">...</button> is not clickable at point (289, 8). Other element would receive the click: <li role="tab" class="Tabs-item" aria-controls="Profile-asks">...</li>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16291 x86_64)
